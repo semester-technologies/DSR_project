@@ -50,3 +50,10 @@ body {
     width: 450px;
   }
 }
+
+@media (min-width: 344px) and (max-width: 345px) {
+  #img {
+    width: 40px;
+    height: 40px;
+  }
+}
