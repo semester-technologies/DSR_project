@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import RewardDetails from "./RewardDetails";
 import RedemptionConfirm from "./RedemptionConfirmed";
+import FoodHamperGift from "./FoodHamperGift";
 
 function IncentivesRewards() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -80,6 +81,9 @@ function IncentivesRewards() {
           </div>
           <div className="hidden">
             <RedemptionConfirm />
+          </div>
+          <div className="hidden">
+            <FoodHamperGift />
           </div>
         </div>
         <div className="flex">
