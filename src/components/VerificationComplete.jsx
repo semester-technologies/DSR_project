@@ -1,0 +1,119 @@
+import { Link } from "react-router-dom";
+import Slider from "./Slider";
+
+export default function VerificationComplete() {
+  const requirements = [
+    {
+      id: "1",
+      title: "Valid ID Document",
+      text: "Upload a clear photo of your NIN, Driver’s License, or Voter’s Card",
+    },
+    {
+      id: "2",
+      title: "Selfie Verification",
+      text: "Take a clear selfie to verify your identity",
+    },
+    {
+      id: "3",
+      title: "Review & Approval",
+      text: "Our team will review and approve your documents",
+    },
+  ];
+
+  return (
+    <>
+      <div className="relative">
+        <div className="flex">
+          <div className="w-[300px] z-10 fixed bg-white">
+            <Slider />
+          </div>
+          <div className="w-[373px]"></div>
+          <main className="relative block w-[100%]">
+            {/** Header */}
+            <div className="flex shadow-sm items-center p-3 justify-between">
+              <div></div>
+              <div className="flex items-center space-x-6">
+                <img src="src/assets/4.png" alt="" />
+                <div className="flex space-x-4 items-center">
+                  <img
+                    src="src/assets/Avatars.png"
+                    className="w-[40px] h-[40px]"
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <span>Rokeeb Abdul</span>
+                    <span>email@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full min-h-screen mx-auto bg-white p-8">
+              <Link
+                to="/settings"
+                className="flex items-center gap-2 text-sm mb-6 cursor-pointer"
+              >
+                <i className="text-xl fa fa-arrow-left"></i>
+                <span className="underline">Back to Settings</span>
+              </Link>
+
+              <div className="shadow-xl rounded-xl p-6 shadow-sm mb-10 max-w-6xl">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="rounded-full bg-gray-200 flex items-center justify-center text-xl">
+                    <img
+                      src="src/assets/check__.png"
+                      className="w-[50px]"
+                      alt=""
+                    />
+                  </div>
+                  <div className="w-full">
+                    <div>
+                      <h2 className="text-lg font-bold">
+                        Verification Complete
+                      </h2>
+                      <p className="text-gray-500 text-sm mt-1 w-full md:w-[90%]">
+                        Your account has been successfully verified. You now
+                        have access to all features.
+                      </p>
+                    </div>
+
+                    <div className="mt-5">
+                      <div className="w-full space-y-2 h-3 bg-gray-200 rounded-full">
+                        <div className="h-full bg-[#1B156C] rounded-full w-full"></div>
+                        <p className="text-gray-500 text-sm mb-1">
+                          100% Complete
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Requirements */}
+              <div className="shadow-xl rounded-xl p-6 shadow-sm max-w-6xl">
+                <h3 className="text-lg font-semibold mb-5">
+                  Verification Requirements
+                </h3>
+
+                <div className="space-y-5">
+                  {requirements.map((req) => (
+                    <div key={req.id} className="flex gap-4">
+                      <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center font-bold">
+                        <img src="src/assets/check.png" alt="" />
+                      </div>
+
+                      <div>
+                        <p className="font-semibold">{req.title}</p>
+                        <p className="text-gray-500 text-sm mt-1">{req.text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </>
+  );
+}
