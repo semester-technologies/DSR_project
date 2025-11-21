@@ -65,7 +65,7 @@ function Dashboard() {
       )} */}
       <div className="relative">
         <div className="flex">
-          <div className="lg:w-[300px] hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
+          <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
             <Slider />
           </div>
           <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
