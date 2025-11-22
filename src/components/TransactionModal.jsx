@@ -29,7 +29,7 @@ function TransactionModal({ onClose }) {
   ];
 
   return (
-    <div className="fixed w-[100%] h-[100vh] bg-[#c5c4cecc] flex justify-center items-center z-50 px-4">
+    <div className="fixed w-[100%] xl:h-[100vh] md:h-[1250px] bg-[#c5c4cecc] flex justify-center items-center z-50 px-4">
       <div className="bg-white w-[500px] rounded-xl p-6 shadow-lg">
         <div className="flex justify-between items-center">
           <h3 className="text-lg font-semibold">Top Up Wallet</h3>
