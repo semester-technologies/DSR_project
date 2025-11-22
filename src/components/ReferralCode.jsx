@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function GenerateReferralCode() {
+function ReferralCode() {
   return (
     <>
       <div className="fixed inset-0">
@@ -16,6 +16,19 @@ function GenerateReferralCode() {
               <select className="w-full p-2 border-1">
                 <option>1</option>
               </select>
+
+              <div>
+                <div className="flex justify-between items-center">
+                  <div>
+                    <p>Referral Link</p>
+                    <p>www.referrallink.com/testname</p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <img src="src/assets/copy.png" alt="" />
+                    <img src="src/assets/share.png" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="float-right mt-4 space-x-4">
               <Link
@@ -37,4 +50,4 @@ function GenerateReferralCode() {
     </>
   );
 }
-export default GenerateReferralCode;
+export default ReferralCode;

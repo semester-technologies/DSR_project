@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Slider from "./Slider";
 import GenerateReferralCode from "./GenerateReferralCode";
+import ReferralCode from "./ReferralCode";
 
 export default function ReferralManagement() {
   const referralLink = "www.referrallink.com/testname";
@@ -63,7 +64,12 @@ export default function ReferralManagement() {
     <>
       <div className="relative">
         <div className="absolute top-0 left-0 z-20">
-          <GenerateReferralCode />
+          <div className="hidden">
+            <GenerateReferralCode />
+          </div>
+          <div className="hidden">
+            <ReferralCode />
+          </div>
         </div>
         <div className="flex">
           <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">

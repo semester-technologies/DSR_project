@@ -51,6 +51,7 @@ import Profile from "./components/Profile.jsx";
 import EditProfile from "./components/EditProfile.jsx";
 import Notifications from "./components/Notification.jsx";
 import GenerateReferralCode from "./components/GenerateReferralCode.jsx";
+import ReferralCode from "./components/ReferralCode.jsx";
 
 function App() {
   return (
@@ -121,6 +122,7 @@ function App() {
           path="/generatereferralcode"
           element={<GenerateReferralCode />}
         />
+        <Route path="/referralcode" element={<ReferralCode />} />
       </Routes>
     </div>
   );
