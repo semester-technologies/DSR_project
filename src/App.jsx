@@ -50,6 +50,7 @@ import NotificationSettings from "./components/NotificationSettings.jsx";
 import Profile from "./components/Profile.jsx";
 import EditProfile from "./components/EditProfile.jsx";
 import Notifications from "./components/Notification.jsx";
+import GenerateReferralCode from "./components/GenerateReferralCode.jsx";
 
 function App() {
   return (
@@ -116,6 +117,10 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/profile/editprofile" element={<EditProfile />} />
         <Route path="/profile/notification" element={<Notifications />} />
+        <Route
+          path="/generatereferralcode"
+          element={<GenerateReferralCode />}
+        />
       </Routes>
     </div>
   );
