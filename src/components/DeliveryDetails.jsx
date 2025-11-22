@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Slider from "./Slider";
+import OrderSuccessModal from "./OrderSuccessful";
 
 export default function DeliveryDetails() {
   const [deliveryType, setDeliveryType] = useState("delivery");
@@ -11,6 +12,9 @@ export default function DeliveryDetails() {
   return (
     <>
       <div className="relative">
+        <div className="absolute idden">
+          <OrderSuccessModal />
+        </div>
         <div className="flex">
           <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
             <Slider />

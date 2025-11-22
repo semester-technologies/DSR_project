@@ -43,6 +43,15 @@ export default function ReferralManagement() {
     },
   ];
 
+  const data = Array.from({ length: 6 }, (_, i) => ({
+    id: i + 1,
+    name: "Test Name",
+    plan: "New Breed Weekly",
+    bonus: "₦5,000",
+    date: "Feb 12",
+    status: "Credited",
+  }));
+
   const copyToClipboard = () => {
     navigator.clipboard.writeText(referralLink);
     setCopied(true);
@@ -127,7 +136,7 @@ export default function ReferralManagement() {
 
               <h2 className="font-semibold mb-3">Referral Bonus Activity</h2>
 
-              <div className="bg-[#fff] rounded-xl overflow-hidden">
+              <div className="bg-[#fff] rounded-xl hidden lg:block overflow-hidden">
                 <table className="w-full text-left text-sm">
                   <thead className="bg-[#FAFAFA] text-black">
                     <tr>
@@ -155,6 +164,37 @@ export default function ReferralManagement() {
                     ))}
                   </tbody>
                 </table>
+              </div>
+
+              <div className="md:hidden">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {data.map((item) => (
+                    <div
+                      key={item.id}
+                      className="w-[350px] md:w-[420px] bg-white shadow-md rounded-xl p-6 border"
+                    >
+                      <h2 className="text-xl font-semibold">{item.name}</h2>
+
+                      <div className="mt-3 border-t pt-4 grid grid-cols-2 gap-y-6 text-sm">
+                        <div className="text-[#444]">Joined Plan</div>
+                        <div className="font-medium">{item.plan}</div>
+
+                        <div className="text-[#444]">Bonus</div>
+                        <div className="font-medium">{item.bonus}</div>
+
+                        <div className="text-[#444]">Date</div>
+                        <div className="font-medium">{item.date}</div>
+
+                        <div className="text-[#444]">Status</div>
+                        <div>
+                          <span className="px-4 py-1 rounded-full bg-[#E3FBE5] text-[#2BB673] font-medium">
+                            {item.status}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </main>
