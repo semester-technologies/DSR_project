@@ -16,6 +16,8 @@ import Logo4 from "./../assets/4.png";
 import star from "./../assets/star.png";
 import bank from "./../assets/bank.png";
 import del from "./../assets/delete.png";
+import fa from "./../assets/logoo.png";
+import da from "./../assets/menu.png";
 
 function WalletSettings() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -27,13 +29,32 @@ function WalletSettings() {
     setIsOnn(!isOnn);
   };
 
-  const [isOn, setIsOn] = useState(false);
-  const [isOnTwo, setIsOnTwo] = useState(false);
-  const [isOnThree, setIsOnThree] = useState(false);
+  // const [isOn, setIsOn] = useState(false);
+  // const [isOnTwo, setIsOnTwo] = useState(false);
+  // const [isOnThree, setIsOnThree] = useState(false);
 
-  const toggleSwitchOne = () => setIsOn(!isOn);
-  const toggleSwitchTwo = () => setIsOnTwo(!isOnTwo);
-  const toggleSwitchThree = () => setIsOnThree(!isOnThree);
+  // const toggleSwitchOne = () => {
+  //   setIsOn(!isOn);
+  // };
+  // const toggleSwitchTwo = () => {
+  //   setIsOnTwo(!isOnTwo);
+  // };
+  // const toggleSwitchThree = () => {
+  //   setIsOnThree(!isOnThree);
+  // };
+
+  // const [switches, setSwitches] = useState({
+  //   one: false,
+  //   two: false,
+  //   three: false,
+  // });
+
+  // const toggleSwitch = (key) => {
+  //   setSwitches((prev) => ({
+  //     ...prev,
+  //     [key]: !prev[key],
+  //   }));
+  // };
 
   const statusStyles = {
     Success: "bg-green-100 text-green-700",
@@ -88,28 +109,31 @@ function WalletSettings() {
     <>
       <div className="relative">
         <div className="flex">
-          <div className="w-[300px] fixed bg-white">
+          <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
             <Slider />
           </div>
-          <div className="w-[373px]"></div>
+          <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
           <main className="relative block w-[100%] pb-42">
             {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
-              <div></div>
+              <div className="">
+                <img className="lg:hidden" src={fa} alt="" />
+              </div>
               <div className="flex items-center space-x-6">
                 <img src={Logo4} alt="Notification bell" />
-                <div className="flex space-x-4 items-center">
+                <div className="flex hidden lg:flex space-x-4 items-center">
                   <img
                     src={AvatarIcon}
                     className="w-[40px] h-[40px] rounded-full"
                     alt="Rokeeb Abdul"
                   />
                   <div className="flex flex-col">
-                    <span className="font-medium">Rokeeb Abdul</span>
-                    <span className="text-sm text-gray-500">
-                      email@gmail.com
-                    </span>
+                    <span>Rokeeb Abdul</span>
+                    <span>email@gmail.com</span>
                   </div>
+                </div>
+                <div className="bg-[#FF8801] lg:hidden rounded-lg flex items-center justify-center w-[48px] h-[48px]">
+                  <img src={da} alt="" />
                 </div>
               </div>
             </div>
@@ -133,7 +157,7 @@ function WalletSettings() {
                       className="w-10 h-10"
                     />
                   </div>
-                  <div className="flex mb-5 items-center space-x-5">
+                  <div className="flex flex-col md:flex-row mb-5 space-y-3 md:space-y-0 md:items-center space-x-5">
                     <Link
                       to="/"
                       className="p-2 bg-[#FF8801] w-full text-center text-[#fff] rounded-full flex items-center justify-center gap-2"
@@ -187,11 +211,13 @@ function WalletSettings() {
                 </div>
               </div>
 
-              <div className="flex pt-12 space-x-8 items-center justify-between">
+              <div className="flex flex-col md:flex-row pt-12 md:space-x-8 space-y-2 md:space-y-0 space-x-4 md:items-center justify-between">
                 <div className="flex shadow-md p-6 flex-col w-full rounded-xl items-start space-x-6">
                   <div className="w-full flex items-center space-x-2 space-y-2">
                     <img src={FrameIcon} alt="Wallet" className="w-6 h-6" />
-                    <p className="relative -top-1">Main Wallet</p>
+                    <p className="relative -top-1 whitespace-nowrap">
+                      Main Wallet
+                    </p>
                   </div>
                   <p className="font-bold">#125,000</p>
                 </div>
@@ -199,23 +225,25 @@ function WalletSettings() {
                 <div className="flex shadow-md p-6 flex-col w-full rounded-xl items-start space-x-6">
                   <div className="w-full flex items-center space-x-2 space-y-2">
                     <img src={FrameIcon} alt="Bonus" className="w-6 h-6" />
-                    <p className="relative -top-1">Bonus Wallet</p>
+                    <p className="relative -top-1 whitespace-nowrap">
+                      Bonus Wallet
+                    </p>
                   </div>
                   <p className="font-bold">#18,500</p>
                 </div>
               </div>
 
               <div className="relative top-24">
-                <div className="flex items-center space-x-4">
+                <div className="flex md:items-center space-y-2 md:space-y-0 flex-col md:flex-row space-x-4">
                   <Link
                     to=""
-                    className="p-2 bg-[#1B156C] px-24 rounded-lg text-[#fff]"
+                    className="p-2 whitespace-nowrap md:whitespace-wrap bg-[#1B156C1A] px-24 text-black rounded-lg text-[#fff] w-full md:w-auto"
                   >
                     Transaction History
                   </Link>
                   <Link
                     to=""
-                    className="p-2 bg-[#1B156C1A] hover:bg-[#1B156C] hover:text-[#fff] px-24 bg-opacity-10 rounded-lg transition"
+                    className="p-2 bg-[#1B156C] text-white whitespace-nowrap md:whitespace-wrap hover:bg-[#1B156C] hover:text-[#fff] px-24 bg-opacity-10 rounded-lg transition"
                   >
                     Wallet Settings
                   </Link>
@@ -356,12 +384,14 @@ function WalletSettings() {
                 {/** Wallet Settings */}
                 <div className="space-y-5">
                   <div className="relative top-12 bg-[#FAFAFA] p-6 pb-24 pt-5 rounded-xl">
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center">
                       <div className="space-y-2">
-                        <h1 className="text-xl font-bold">
+                        <h1 className="md:text-xl text-center md:text-left font-bold">
                           Linked Bank Accounts
                         </h1>
-                        <p>Manage your withdrawal destination accounts</p>
+                        <p className="text-center md:text-left">
+                          Manage your withdrawal destination accounts
+                        </p>
                       </div>
                       <div>
                         <Link
@@ -374,11 +404,17 @@ function WalletSettings() {
                     </div>
                     <div className="relative top-12 space-y-6">
                       <div className="flex items-center justify-between bg-[#fff] p-3 space-x-4">
-                        <div className="flex items-center space-x-4">
-                          <img src={bank} className="rounded-lg" alt="" />
+                        <div className="flex flex-col md:flex-row items-start md:items-center space-x-4">
+                          <img
+                            src={bank}
+                            className="rounded-lg h-[35px] md:h-auto"
+                            alt=""
+                          />
                           <div>
                             <div className="flex items-center space-x-5">
-                              <h1 className="text-xl font-bold">Ahmed Bello</h1>
+                              <h1 className="md:text-xl font-bold">
+                                Ahmed Bello
+                              </h1>
                               <div className="flex items-center p-1 px-3 rounded-full text-xs space-x-2 bg-[#04A9491A] bg-opacity-10 text-[#04A949]">
                                 <img src={star} alt="" />
                                 <span>Default</span>
@@ -392,16 +428,22 @@ function WalletSettings() {
                           </div>
                         </div>
                         <div className="p-2 shadow-inner bg-white flex items-center justify-center">
-                          <img src={del} className="" alt="" />
+                          <img src={del} alt="" />
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-between bg-[#fff] p-3 space-x-4">
-                        <div className="flex items-center space-x-4">
-                          <img src={bank} className="rounded-lg" alt="" />
+                      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center justify-between bg-[#fff] p-3 space-x-4">
+                        <div className="flex flex-col md:items-center items-start space-x-4">
+                          <img
+                            src={bank}
+                            className="rounded-lg h-[35px]"
+                            alt=""
+                          />
                           <div>
                             <div className="flex items-center space-x-5">
-                              <h1 className="text-xl font-bold">Ahmed Bello</h1>
+                              <h1 className="md:text-xl font-bold">
+                                Ahmed Bello
+                              </h1>
                               <div className="flex items-center p-1 px-3 rounded-full text-xs space-x-2 bg-[#04A9491A] bg-opacity-10 text-[#04A949]">
                                 <img src={star} alt="" />
                                 <span>Default</span>
@@ -414,7 +456,7 @@ function WalletSettings() {
                             </p>
                           </div>
                         </div>
-                        <div className="p-2 space-x-6 bg-white flex items-center justify-center">
+                        <div className="p-2 space-x-6 block flex items-center">
                           <p className="p-1.5 border-1 border-[#E1E1E1] px-6 rounded-full">
                             Set As Default
                           </p>
