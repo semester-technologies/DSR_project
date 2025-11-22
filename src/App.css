@@ -57,3 +57,18 @@ body {
     height: 40px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1025px) {
+  #dd {
+    height: 100vh;
+  }
+}
+@media (min-width: 912px) and (max-width: 913px) {
+  #dd {
+    height: 100vh;
+  }
+}
+@media (min-width: 853px) and (max-width: 854px) {
+  #dd {
+    height: 100vh;
+  }
+}

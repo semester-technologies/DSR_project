@@ -85,7 +85,7 @@ function Wallet() {
           <div className="hidden">
             <TransactionDetails />
           </div>
-          <div className="hidden">
+          <div className="hiden">
             <TransactionModal />
           </div>
           <div className="hidden">
