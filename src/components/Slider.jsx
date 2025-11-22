@@ -39,7 +39,7 @@ function Slider() {
 
   return (
     <>
-      <div className="lg:relative lg:top-0 lg:w-[250px] hidde xl:w-[300px] absolute lg:h-[100vh] h-[93vh] top-18 overflow-y-scroll md:overflow-y-auto z-10 w-[280px] lg:overflow-y-scroll 2xl:overflow-y-auto bg-white px-2 border-r border-[#ccc]">
+      <div className="lg:relative lg:top-0 lg:w-[300px] hidde xl:w-[300px] absolute lg:h-[100vh] h-[93vh] top-18 overflow-y-scroll md:overflow-y-auto z-10 w-[280px] lg:overflow-y-scroll 2xl:overflow-y-auto bg-white px-2 border-r border-[#ccc]">
         <div className="flex flex-col justify-between bg-[#fff] h-[91vh] xl:h-[100vh]">
           <div className="pt-3">
             <Link

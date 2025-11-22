@@ -139,7 +139,7 @@ function WalletSettings() {
             </div>
 
             {/** Body */}
-            <div className="p-6 pt-14">
+            <div className="p-6 pt-14 xl:pl-8">
               <div className="flex items-start flex-row justify-between space-y-2">
                 <div className="flex items-start flex-col">
                   <h1 className="text-2xl font-bold">Wallet</h1>
@@ -432,11 +432,11 @@ function WalletSettings() {
                         </div>
                       </div>
 
-                      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center justify-between bg-[#fff] p-3 space-x-4">
-                        <div className="flex flex-col md:items-center items-start space-x-4">
+                      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:items-center justify-between bg-[#fff] p-3 space-x-4">
+                        <div className="flex flex-col md:flex-row md:items-center items-start space-x-4">
                           <img
                             src={bank}
-                            className="rounded-lg h-[35px]"
+                            className="rounded-lg h-[35px] md:h-auto"
                             alt=""
                           />
                           <div>
