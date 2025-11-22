@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 export default function TransactionDetails({ onClose }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-[#c2c0cb]/60 backdrop-blur-sm z-50">
-      <div className="bg-white rounded-2xl shadow-lg w-[420px] p-6">
+      <div className="bg-white rounded-2xl shadow-lg w-[420px] md:p-6 mx-3 p-2 py-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold">Transaction Details</h2>

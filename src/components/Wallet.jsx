@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Slider from "./Slider";
 import { useMemo, useState } from "react";
 // import { ClipLoader } from "react-spinners";
+import TransactionDetails from "./TransactionDetails";
 
 function Wallet() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -78,6 +79,9 @@ function Wallet() {
         </div>
       )} */}
       <div className="relative">
+        <div className="absolute hiden">
+          <TransactionDetails />
+        </div>
         <div className="flex">
           <div className="lg:w-[170px] xl:w-[300px] hidden lg:block lg:fixed bg-[#000] z-10 absolute lg:block fixed">
             <Slider />

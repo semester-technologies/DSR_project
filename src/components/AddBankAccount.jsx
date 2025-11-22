@@ -12,7 +12,7 @@ function AddBankAccount({ onClose }) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-[#c2c0cb]/60 backdrop-blur-sm z-50">
-      <div className="bg-white rounded-2xl shadow-lg w-[420px] p-6">
+      <div className="bg-white rounded-2xl shadow-lg w-[420px] xl:p-6 mx-3 p-4">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold">Add Bank Account</h2>
@@ -125,7 +125,7 @@ function AddBankAccount({ onClose }) {
             <button
               type="submit"
               disabled={!bankSelected}
-              className={`px-6 py-2 rounded-lg font-medium text-white transition ${
+              className={`px-6 py-2 whitespace-nowrap rounded-lg font-medium text-white transition ${
                 bankSelected
                   ? "bg-orange-500 hover:bg-orange-600"
                   : "bg-orange-300 cursor-not-allowed"

@@ -18,6 +18,8 @@ import bank from "./../assets/bank.png";
 import del from "./../assets/delete.png";
 import fa from "./../assets/logoo.png";
 import da from "./../assets/menu.png";
+import TransactionDetails from "./TransactionDetails";
+import AddBankAccount from "./AddBankAccount";
 
 function WalletSettings() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -108,6 +110,9 @@ function WalletSettings() {
   return (
     <>
       <div className="relative">
+        <div className="absolute hidde">
+          <AddBankAccount />
+        </div>
         <div className="flex">
           <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
             <Slider />
