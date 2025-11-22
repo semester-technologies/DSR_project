@@ -62,16 +62,18 @@ export default function ReferralManagement() {
     <>
       <div className="relative">
         <div className="flex">
-          <div className="w-[300px] fixed bg-white">
+          <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
             <Slider />
           </div>
-          <div className="w-[373px]"></div>
-          <main className="relative block w-[100%]">
-            <div className="flex shadow-sm items-center p-3 justify-between">
-              <div></div>
+          <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
+          <main className="relative  block w-[100%]">
+            <div className="flex bg-[#FFFBF6] lg:fixed lg:right-0 xl:w-[1010px] lg:w-[730px] xl:w-[1150px] 2xl:w-[1520px] lg:bg-[#fff] lg:z-5 items-center p-3 justify-between">
+              <div className="">
+                <img className="lg:hidden" src="src/assets/logoo.png" alt="" />
+              </div>
               <div className="flex items-center space-x-6">
                 <img src="src/assets/4.png" alt="" />
-                <div className="flex space-x-4 items-center">
+                <div className="flex hidden lg:flex space-x-4 items-center">
                   <img
                     src="src/assets/Avatars.png"
                     className="w-[40px] h-[40px]"
@@ -82,10 +84,13 @@ export default function ReferralManagement() {
                     <span>email@gmail.com</span>
                   </div>
                 </div>
+                <div className="bg-[#FF8801] lg:hidden rounded-lg flex items-center justify-center w-[48px] h-[48px]">
+                  <img src="src/assets/menu.png" alt="" />
+                </div>
               </div>
             </div>
 
-            <div className="p-8 w-full">
+            <div className="p-8 w-full pt-14 lg:pt-32">
               <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-semibold">Referral management</h1>
 
@@ -94,7 +99,7 @@ export default function ReferralManagement() {
                 </button>
               </div>
 
-              <div className="grid grid-cols-1 grid-cols-3 gap-4 mb-8">
+              <div className="md:grid space-y-4 md:space-y-0 grid-cols-1 grid-cols-3 gap-4 mb-8">
                 <div className="bg-white p-5 rounded-xl shadow-xl">
                   <p className="text-sm text-gray-600">Total Referrals</p>
                   <p className="text-3xl font-semibold mt-2">6</p>
@@ -134,9 +139,11 @@ export default function ReferralManagement() {
                 </div>
               </div>
 
-              <h2 className="font-semibold mb-3">Referral Bonus Activity</h2>
+              <h2 className="md:font-semibold font-bold mb-3">
+                Referral Bonus Activity
+              </h2>
 
-              <div className="bg-[#fff] rounded-xl hidden lg:block overflow-hidden">
+              <div className="bg-[#fff] md:block rounded-xl hidden overflow-hidden">
                 <table className="w-full text-left text-sm">
                   <thead className="bg-[#FAFAFA] text-black">
                     <tr>
@@ -166,12 +173,12 @@ export default function ReferralManagement() {
                 </table>
               </div>
 
-              <div className="md:hidden">
+              <div className="md:hidden mt-8 md:mt-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {data.map((item) => (
                     <div
                       key={item.id}
-                      className="w-[350px] md:w-[420px] bg-white shadow-md rounded-xl p-6 border"
+                      className="w-[100%] md:w-[420px] bg-white shadow-md rounded-xl p-6 border"
                     >
                       <h2 className="text-xl font-semibold">{item.name}</h2>
 
