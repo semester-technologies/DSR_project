@@ -9,6 +9,7 @@ import WithdrawMoney from "./WithdrawModal";
 import WithdrawModal from "./WithdrawModalII";
 import TransactionModalI from "./WithdrawModelIII";
 import ConfirmWithdrawal from "./ConfirmWithdrawal";
+import WithdrawalSuccess from "./WithdrawalSuccess";
 
 function Wallet() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -104,8 +105,11 @@ function Wallet() {
           <div className="hidden">
             <TransactionModalI />
           </div>
-          <div className="">
+          <div className="hidden">
             <ConfirmWithdrawal />
+          </div>
+          <div className="">
+            <WithdrawalSuccess />
           </div>
         </div>
         <div className="flex min-h-screen">
