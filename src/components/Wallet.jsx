@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import TransactionDetails from "./TransactionDetails";
 import TransactionModal from "./TransactionModal";
 import AddBankAccount from "./AddBankAccount";
+import WithdrawMoney from "./WithdrawModal";
 
 function Wallet() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -85,11 +86,14 @@ function Wallet() {
           <div className="hidden">
             <TransactionDetails />
           </div>
-          <div className="hiden">
+          <div className="hidden">
             <TransactionModal />
           </div>
           <div className="hidden">
             <AddBankAccount />
+          </div>
+          <div className="">
+            <WithdrawMoney />
           </div>
         </div>
         <div className="flex min-h-screen">
