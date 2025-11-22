@@ -28,7 +28,10 @@ export default function ShoppingCart() {
   return (
     <>
       <div className="bg-[#0A064033] h-[100vh] overflow-y-scroll">
-        <div className="p-6 bg-[#fff] pb-24 lg:w-[1050px] w-[345px] float-right font-sans">
+        <div
+          id="ase"
+          className="p-6 bg-[#fff] pb-24 lg:w-[1050px] lg:px-14 lg:h-[100vh] w-[100%] float-right font-sans"
+        >
           <h2 className="text-xl font-semibold mb-4 flex items-center space-x-4">
             <img src="src/assets/exit.png" alt="" />{" "}
             <span>Shopping Cart ({items.length} items)</span>

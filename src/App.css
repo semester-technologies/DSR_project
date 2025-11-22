@@ -82,3 +82,18 @@ body {
     height: 1155px;
   }
 }
+@media (min-width: 819px) and (max-width: 821px) {
+  #ase {
+    height: 100vh;
+  }
+}
+@media (min-width: 911px) and (max-width: 913px) {
+  #ase {
+    height: 100vh;
+  }
+}
+@media (min-width: 852px) and (max-width: 854px) {
+  #ase {
+    height: 100vh;
+  }
+}
