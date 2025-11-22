@@ -8,7 +8,6 @@ export default function WithdrawModal() {
   const [isOpen, setIsOpen] = useState(true);
   const inputRef = useRef(null);
 
-  // Format number with commas and ₦
   const formatCurrency = (value) => {
     if (!value) return "";
     const num = value.replace(/\D/g, "");
@@ -16,14 +15,12 @@ export default function WithdrawModal() {
     return `₦${parseInt(num, 10).toLocaleString()}`;
   };
 
-  // Handle input change
   const handleChange = (e) => {
-    const rawValue = e.target.value.replace(/₦|,/g, ""); // Remove ₦ and commas
+    const rawValue = e.target.value.replace(/₦|,/g, "");
     const digitsOnly = rawValue.replace(/\D/g, "");
     setAmount(digitsOnly);
   };
 
-  // Handle focus: show formatted value
   const handleFocus = (e) => {
     const formatted = formatCurrency(amount);
     setTimeout(() => {
@@ -33,7 +30,6 @@ export default function WithdrawModal() {
     }, 0);
   };
 
-  // Handle blur: update state and keep raw digits
   const handleBlur = (e) => {
     const formatted = formatCurrency(amount);
     e.target.value = formatted;
@@ -43,7 +39,7 @@ export default function WithdrawModal() {
 
   return (
     <>
-      <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center p-4 z-50">
+      <div className="fixed inset-0 bg-[#c5c4cecc]/50 bg-opacity-75 flex items-center justify-center p-4 z-50">
         <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-6 relative">
           {/* Header */}
           <div className="flex border-b-2 pb-2 items-center justify-between mb-6">
@@ -58,7 +54,6 @@ export default function WithdrawModal() {
             </button>
           </div>
 
-          {/* Wallet Selection */}
           <div className="mb-6">
             <p className="text-sm text-gray-600 mb-3">
               Select which wallet to withdraw from
@@ -77,7 +72,6 @@ export default function WithdrawModal() {
             </div>
           </div>
 
-          {/* Amount Input */}
           <div className="mb-8">
             <label
               htmlFor="amount"
@@ -101,15 +95,14 @@ export default function WithdrawModal() {
             <p className="text-xs text-gray-500 mt-2">Min: ₦50,000</p>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex float-right space-x-4">
+          <div className="flex md:float-right justify-center space-x-2 md:space-x-4">
             <button
               onClick={() => setIsOpen(false)}
-              className="px-10 py-3 bg-[#FFE8CE] text-gray-700 rounded-full font-medium transition-colors"
+              className="md:px-10 px-8 py-3 bg-[#FFE8CE] text-gray-700 rounded-full font-medium transition-colors"
             >
               Cancel
             </button>
-            <button className="px-10 py-3 bg-[#FF8801] text-white rounded-full font-medium transition-colors shadow-sm">
+            <button className="md:px-10 px-10 py-3 bg-[#FF8801] text-white rounded-full font-medium transition-colors shadow-sm">
               Continue
             </button>
           </div>

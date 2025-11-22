@@ -24,7 +24,7 @@ function WithdrawMoney({ onClose }) {
   return (
     <div
       id="wa"
-      className="fixed w-[100%] h-[100vh] md:h-[100vh] bg-[#c5c4cecc] flex justify-center items-center z-50 px-4"
+      className="fixed w-[100%] h-[100vh] md:h-[100vh] bg-[#c5c4cecc]/50 flex justify-center items-center z-50 px-4"
     >
       <div className="bg-white w-[500px] rounded-xl p-6 shadow-lg">
         <div className="flex justify-between items-center">
