@@ -8,6 +8,7 @@ import AddBankAccount from "./AddBankAccount";
 import WithdrawMoney from "./WithdrawModal";
 import WithdrawModal from "./WithdrawModalII";
 import TransactionModalI from "./WithdrawModelIII";
+import ConfirmWithdrawal from "./ConfirmWithdrawal";
 
 function Wallet() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -84,7 +85,7 @@ function Wallet() {
         </div>
       )} */}
       <div className="relative">
-        <div className="absolute hiden">
+        <div className="absolute hiden z-100">
           <div className="hidden">
             <TransactionDetails />
           </div>
@@ -100,8 +101,11 @@ function Wallet() {
           <div className="hidden">
             <WithdrawModal />
           </div>
-          <div className="">
+          <div className="hidden">
             <TransactionModalI />
+          </div>
+          <div className="">
+            <ConfirmWithdrawal />
           </div>
         </div>
         <div className="flex min-h-screen">
