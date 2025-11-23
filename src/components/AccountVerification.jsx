@@ -29,7 +29,7 @@ export default function AccountVerification() {
           <div className="hidden">
             <UploadIDModal />
           </div>
-          <div>
+          <div className="hidden">
             <SelfieVerificationModal />
           </div>
         </div>

@@ -63,7 +63,7 @@ export default function Notifications() {
     <div className="w-full h-screen bg-[#07004633] flex">
       <div className="w-full flex justify-between">
         <div className="w-[500px]"></div>
-        <div className="flex-1 bg-[#fff] p-10">
+        <div className="flex-1 bg-[#fff] lg:h-[100vh] lg:overflow-y-scroll p-10">
           <div className="flex justify-between items-center mb-6">
             <div className="space-x-4 flex items-center">
               <img src={logo} alt="" />

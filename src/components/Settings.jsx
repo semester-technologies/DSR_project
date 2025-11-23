@@ -1,3 +1,4 @@
+import ChangePassword from "./ChangePassword";
 import Slider from "./Slider";
 
 export default function Settings() {
@@ -19,6 +20,12 @@ export default function Settings() {
   return (
     <>
       <div className="relative">
+        <div className="absolute z-50 w-full">
+          <div className="hidden">
+            <ChangePassword />
+          </div>
+          <div></div>
+        </div>
         <div className="flex">
           <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
             <Slider />
