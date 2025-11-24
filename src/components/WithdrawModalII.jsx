@@ -25,7 +25,6 @@ export default function WithdrawModal() {
     const formatted = formatCurrency(amount);
     setTimeout(() => {
       e.target.value = formatted;
-      // Move cursor to end
       e.target.setSelectionRange(formatted.length, formatted.length);
     }, 0);
   };
@@ -41,7 +40,6 @@ export default function WithdrawModal() {
     <>
       <div className="fixed inset-0 bg-[#c5c4cecc]/50 bg-opacity-75 flex items-center justify-center p-4 z-50">
         <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-6 relative">
-          {/* Header */}
           <div className="flex border-b-2 pb-2 items-center justify-between mb-6">
             <h2 className="text-xl font-semibold text-gray-900">
               Withdraw Money

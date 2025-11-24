@@ -5,7 +5,6 @@ export default function TransactionDetails({ onClose }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-[#c2c0cb]/60 backdrop-blur-sm z-50">
       <div className="bg-white rounded-2xl shadow-lg w-[420px] md:p-6 mx-3 p-2 py-4">
-        {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold">Transaction Details</h2>
           <button onClick={onClose} className="text-gray-500 hover:text-black">
@@ -15,7 +14,6 @@ export default function TransactionDetails({ onClose }) {
 
         <hr className="border-gray-200 mb-4" />
 
-        {/* Amount Box */}
         <div className="border border-gray-200 rounded-xl py-4 text-center mb-6">
           <p className="text-sm text-gray-500">Wallet Top-up</p>
           <p className="text-2xl font-semibold mt-1 text-gray-800">+ 50,000</p>
@@ -24,7 +22,6 @@ export default function TransactionDetails({ onClose }) {
           </span>
         </div>
 
-        {/* Transaction Details */}
         <div className="border border-gray-200 rounded-xl p-4">
           <h3 className="text-sm font-semibold mb-3">Transaction Details</h3>
           <div className="flex justify-between text-sm mb-2">

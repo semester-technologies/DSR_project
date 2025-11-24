@@ -119,7 +119,6 @@ function WalletSettings() {
           </div>
           <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
           <main className="relative block w-[100%] pb-42">
-            {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
               <div className="">
                 <img className="lg:hidden" src={fa} alt="" />
@@ -143,7 +142,6 @@ function WalletSettings() {
               </div>
             </div>
 
-            {/** Body */}
             <div className="p-6 pt-14 xl:pl-8">
               <div className="flex items-start flex-row justify-between space-y-2">
                 <div className="flex items-start flex-col">
@@ -254,7 +252,6 @@ function WalletSettings() {
                   </Link>
                 </div>
 
-                {/** Transaction History */}
                 <div className="hidden">
                   <div className="flex items-center space-x-4 mt-8">
                     <div className="bg-[#F0F0F0] w-full p-2 space-x-4 flex items-center rounded-lg">
@@ -386,7 +383,6 @@ function WalletSettings() {
                   </div>
                 </div>
 
-                {/** Wallet Settings */}
                 <div className="space-y-5">
                   <div className="relative top-12 bg-[#FAFAFA] p-6 pb-24 pt-5 rounded-xl">
                     <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center">

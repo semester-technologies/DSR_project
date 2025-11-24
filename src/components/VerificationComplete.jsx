@@ -29,7 +29,6 @@ export default function VerificationComplete() {
           </div>
           <div className="w-[373px]"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
               <div></div>
               <div className="flex items-center space-x-6">
@@ -89,7 +88,6 @@ export default function VerificationComplete() {
                 </div>
               </div>
 
-              {/* Requirements */}
               <div className="shadow-xl rounded-xl p-6 shadow-sm max-w-6xl">
                 <h3 className="text-lg font-semibold mb-5">
                   Verification Requirements
