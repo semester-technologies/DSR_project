@@ -49,7 +49,7 @@ function Header() {
     <>
       {isLoading && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
-          <ClipLoader color="#010101ff" size={60} />
+          <ClipLoader color="#FF8801" size={60} />
         </div>
       )}
       <div className="lg:relative fixed top-0 w-full left-0 z-10 bg-[#fff] shadow-lg lg:shadow-none lg:p-5 lg:px-0">

@@ -65,7 +65,7 @@ function Dashboard() {
       )} */}
       <div className="relative">
         <div className="flex">
-          <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
+          <div className="hdden lg:block lg:fixed bg-[#000] z-10 absolute lg:block fixed h-[100vh]">
             <Slider />
           </div>
           <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
@@ -100,9 +100,9 @@ function Dashboard() {
                   <p>Here's a quick view of your savings and benefits.</p>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Link to="/" className="bg-[#FFE8CE] p-2 px-6 rounded-full">
+                  {/* <Link to="/" className="bg-[#FFE8CE] p-2 px-6 rounded-full">
                     <button>Add Savings</button>
-                  </Link>
+                  </Link> */}
                   <Link
                     to="/"
                     className="bg-[#FF8801] text-white p-2 px-6 rounded-full"
