@@ -16,7 +16,6 @@ export default function TrackOrder() {
         <div className="w-[373px]"></div>
 
         <main className="relative block w-[100%]">
-          {/** Header */}
           <div className="flex shadow-sm items-center p-3 justify-between">
             <div></div>
             <div className="flex items-center space-x-6">
@@ -35,7 +34,6 @@ export default function TrackOrder() {
             </div>
           </div>
 
-          {/** BODY */}
           <div className="max-w-7xl p-8 mx-auto min-h-screen">
             <div className="mb-4 flex items-center gap-2 cursor-pointer">
               <i className="fa fa-arrow-left"></i>
@@ -100,7 +98,6 @@ export default function TrackOrder() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              {/* Summary Box */}
               <div className="bg-white p-6 rounded-xl border border-[#E1E1E1]">
                 <h3 className="font-semibold text-lg mb-4">Order Summary</h3>
 
@@ -126,7 +123,6 @@ export default function TrackOrder() {
                   </div>
                 </div>
 
-                {/* Product List */}
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 bg-gray-200 rounded"></div>
                   <div>
@@ -146,7 +142,6 @@ export default function TrackOrder() {
                 </div>
               </div>
 
-              {/* Delivery Info */}
               <div className="bg-white p-6 rounded-xl border border-[#E1E1E1]">
                 <h3 className="font-semibold text-lg mb-4">
                   Delivery Information
@@ -165,7 +160,6 @@ export default function TrackOrder() {
                   <span className="font-bold">Feb 26, 2025</span>
                 </div>
 
-                {/* Help Box */}
                 <h3 className="font-semibold text-lg mb-2">Need Help?</h3>
                 <p className="text-sm mb-4">
                   Contact our support team for any questions about your order

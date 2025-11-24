@@ -54,7 +54,6 @@ export default function SupportTickets() {
           </div>
           <div className="w-[373px]"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
               <div></div>
               <div className="flex items-center space-x-6">

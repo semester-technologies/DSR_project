@@ -60,7 +60,7 @@ export default function Notifications() {
   );
 
   return (
-    <div className="w-full h-screen bg-[#07004633] flex">
+    <div id="bk" className="w-full hidden h-screen bg-[#07004633] flex">
       <div className="w-full flex justify-between">
         <div className="w-[500px]"></div>
         <div className="flex-1 bg-[#fff] lg:h-[100vh] lg:overflow-y-scroll p-10">
@@ -69,7 +69,12 @@ export default function Notifications() {
               <img src={logo} alt="" />
               <h2 className="text-xl font-bold">Notifications</h2>
             </div>
-            <button className="border px-10 py-2 rounded-lg flex items-center gap-2">
+            <button
+              onClick={() => {
+                document.getElementById("bk").style = "display: none";
+              }}
+              className="border px-10 py-2 rounded-lg flex items-center gap-2"
+            >
               Close
             </button>
           </div>

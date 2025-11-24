@@ -75,7 +75,6 @@ function AvailablePlan() {
           </div>
           <div className="w-[375px] xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
               <div>
                 <img className="lg:hidden" src="src/assets/logoo.png" alt="" />
@@ -98,8 +97,6 @@ function AvailablePlan() {
                 </div>
               </div>
             </div>
-
-            {/** Main  */}
 
             <div className="relative mt-16 p-6 pt-0">
               <div className="space-y-6">

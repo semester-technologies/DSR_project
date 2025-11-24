@@ -40,7 +40,6 @@ export default function NotificationSettings() {
           </div>
           <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
             <div className="flex bg-[#FFFBF6] lg:fixed lg:right-0 xl:w-[1010px] lg:w-[730px] xl:w-[1150px] 2xl:w-[1520px] lg:bg-[#fff] lg:z-5 items-center p-3 justify-between">
               <div className="">
                 <img className="lg:hidden" src="src/assets/logoo.png" alt="" />
@@ -63,8 +62,6 @@ export default function NotificationSettings() {
                 </div>
               </div>
             </div>
-
-            {/** Body */}
             <div className="p-6 lg:pt-28 w-full flex flex-col gap-6">
               <button className="flex items-center text-sm text-gray-700 space-x-3 hover:underline">
                 <i className="fa fa-arrow-left"></i>{" "}

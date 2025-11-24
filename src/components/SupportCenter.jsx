@@ -11,7 +11,6 @@ export default function SupportCenter() {
           </div>
           <div className="w-[373px]"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
               <div></div>
               <div className="flex items-center space-x-6">
@@ -30,7 +29,6 @@ export default function SupportCenter() {
               </div>
             </div>
 
-            {/** Body */}
             <div className="w-full max-w-7xl mx-auto px-6 py-10">
               <h1 className="text-2xl font-bold mb-8">Support Center</h1>
 

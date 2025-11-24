@@ -18,9 +18,7 @@ function AccountCreation() {
                 Select the account creation method that fits your needs
               </p>
 
-              {/* Options */}
               <div className="flex flex-col space-y-4">
-                {/* OPTION 1 — Single Account */}
                 <div
                   onClick={() => setSelected("single")}
                   className={`p-3 flex items-center space-x-4 rounded-lg cursor-pointer border
@@ -31,7 +29,6 @@ function AccountCreation() {
                     }
                   `}
                 >
-                  {/* Circle */}
                   <div
                     className={`w-[10px] h-[10px] rounded-full
                       ${selected === "single" ? "bg-orange-500" : "bg-gray-300"}
@@ -44,7 +41,6 @@ function AccountCreation() {
                   </div>
                 </div>
 
-                {/* OPTION 2 — Multiple Accounts */}
                 <div
                   onClick={() => setSelected("multiple")}
                   className={`p-3 flex items-center space-x-4 rounded-lg cursor-pointer border
@@ -55,7 +51,6 @@ function AccountCreation() {
                     }
                   `}
                 >
-                  {/* Circle */}
                   <div
                     className={`w-[10px] h-[10px] rounded-full
                       ${
@@ -75,7 +70,6 @@ function AccountCreation() {
                 </div>
               </div>
 
-              {/* Buttons */}
               <div className="flex justify-end mt-8 space-x-4">
                 <Link
                   to="/"

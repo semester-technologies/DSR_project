@@ -7,13 +7,11 @@ function AddBankAccount({ onClose }) {
   const [accountName, setAccountName] = useState("");
   const [setAsDefault, setSetAsDefault] = useState(false);
 
-  // Check if a valid bank is selected
   const bankSelected = bank !== "";
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-[#c2c0cb]/60 backdrop-blur-sm z-50">
       <div className="bg-white rounded-2xl shadow-lg w-[420px] xl:p-6 mx-3 p-4">
-        {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold">Add Bank Account</h2>
           <button onClick={onClose} className="text-gray-500 hover:text-black">
@@ -23,14 +21,11 @@ function AddBankAccount({ onClose }) {
 
         <hr className="border-gray-200 mb-4" />
 
-        {/* Description */}
         <p className="text-gray-500 text-sm mb-6">
           Link a bank account to withdraw your funds.
         </p>
 
-        {/* Form */}
         <form className="space-y-4">
-          {/* Bank Name */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Bank Name
@@ -41,7 +36,6 @@ function AddBankAccount({ onClose }) {
                 const selectedBank = e.target.value;
                 setBank(selectedBank);
 
-                // Reset fields if "Select your bank" is chosen
                 if (selectedBank === "") {
                   setAccountNumber("");
                   setAccountName("");
@@ -58,7 +52,6 @@ function AddBankAccount({ onClose }) {
             </select>
           </div>
 
-          {/* Account Number */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Account Number
@@ -77,7 +70,6 @@ function AddBankAccount({ onClose }) {
             />
           </div>
 
-          {/* Account Name */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Account Name
@@ -96,7 +88,6 @@ function AddBankAccount({ onClose }) {
             />
           </div>
 
-          {/* Checkbox */}
           <div className="flex items-center space-x-2 mt-2">
             <input
               id="defaultAccount"
@@ -113,7 +104,6 @@ function AddBankAccount({ onClose }) {
             </label>
           </div>
 
-          {/* Buttons */}
           <div className="flex justify-end space-x-3 pt-4">
             <button
               type="button"

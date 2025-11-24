@@ -67,7 +67,6 @@ Or type 'agent' to speak with a support agent.`,
           </div>
           <div className="w-[373px]"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
               <div></div>
               <div className="flex items-center space-x-6">
@@ -86,7 +85,6 @@ Or type 'agent' to speak with a support agent.`,
               </div>
             </div>
 
-            {/** Body */}
             <div className="max-w-7xl w-full float-right px-6 py-10">
               <Link
                 to="/support"

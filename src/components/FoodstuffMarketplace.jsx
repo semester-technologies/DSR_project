@@ -30,8 +30,6 @@ function FoodstuffMarket() {
           </div>
           <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
-
             <div className="flex lg:fixed lg:right-0 xl:w-[1010px] lg:w-[730px] xl:w-[1150px] 2xl:w-[1520px] lg:bg-[#fff] lg:z-5 items-center p-3 justify-between">
               <div className="">
                 <img className="lg:hidden" src="src/assets/logoo.png" alt="" />
@@ -54,8 +52,6 @@ function FoodstuffMarket() {
                 </div>
               </div>
             </div>
-
-            {/** Body */}
 
             <div className="p-6 font-sans max-w-7xl mx-auto">
               <h1 className="text-2xl font-bold mb-4">Foodstuff Marketplace</h1>

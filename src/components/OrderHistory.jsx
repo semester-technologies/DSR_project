@@ -41,7 +41,6 @@ export default function OrderHistory() {
           </div>
           <div className="w-[373px]"></div>
           <main className="relative block w-[100%]">
-            {/** Header */}
             <div className="flex shadow-sm items-center p-3 justify-between">
               <div></div>
               <div className="flex items-center space-x-6">
@@ -68,7 +67,6 @@ export default function OrderHistory() {
                   View and track all your orders
                 </p>
 
-                {/* Search Bar */}
                 <div className="flex items-center bg-gray-100 rounded-xl px-4 py-3">
                   <span className="text-lg mr-3">
                     <i className="fa fa-search"></i>
@@ -83,7 +81,6 @@ export default function OrderHistory() {
                 </div>
               </div>
 
-              {/* Orders Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {filtered.map((order, index) => (
                   <div
@@ -106,7 +103,6 @@ export default function OrderHistory() {
                       )}
                     </div>
 
-                    {/* Meta */}
                     <div className="flex items-center text-xs text-gray-500 gap-4 mt-1">
                       <span className="flex items-center gap-1">
                         <img src="src/assets/cal.png" alt="" />
@@ -118,12 +114,10 @@ export default function OrderHistory() {
                       </span>
                     </div>
 
-                    {/* Amount */}
                     <p className="font-semibold text-lg mt-3">
                       ₦{order.amount.toLocaleString()}
                     </p>
 
-                    {/* Button */}
                     <button className="mt-4 bg-[#FFE8CE] w-[120px] text-gray-700 py-2 rounded-full hover:bg-orange-100 transition text-sm">
                       View Details
                     </button>

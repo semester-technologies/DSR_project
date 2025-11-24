@@ -47,7 +47,6 @@ export default function SupportChat() {
 
   return (
     <>
-      {/** Body */}
       <div className="w-full h-screen relative bg-[#0A064033] p-6">
         <div className="w-full max-w-3xl absolute top-0 bg-[#fff] right-0 h-[100vh] p-6">
           <div className="flex items-center border-b-1 border-[#D9D9D9] space-x-6">
@@ -77,7 +76,6 @@ export default function SupportChat() {
                   }`}
                 >
                   <div className="flex items-start gap-3 max-w-lg">
-                    {/* Icon */}
                     {msg.sender === "bot" && (
                       <div className="flex items-center justify-center rounded-full text-lg font-bold">
                         <img
