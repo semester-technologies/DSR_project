@@ -27,6 +27,13 @@ function EditProfile({ user, setUser }) {
     });
 
     toast.success("Successfully updated!");
+
+    setTimeout(() => {
+      const el = document.getElementById("qwa");
+      if (el) {
+        el.style.display = "none";
+      }
+    }, 2000);
   };
 
   return (
