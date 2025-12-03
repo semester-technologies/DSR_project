@@ -55,6 +55,7 @@ function Account() {
                   <label for="firstName">FullName</label>
                   <input
                     type=""
+                    required
                     placeholder="example, Michael Adebayo"
                     className="p-2 pl-4 focus:outline-none rounded-full shadow-md"
                   />
@@ -64,6 +65,7 @@ function Account() {
                   <input
                     type=""
                     placeholder="@example.com"
+                    required
                     className="shadow-md pl-4 p-2 focus:outline-none rounded-full"
                   />
                 </div>
@@ -71,6 +73,7 @@ function Account() {
                   <label for="phoneNumber">Phone Number</label>
                   <input
                     type="tel"
+                    required
                     placeholder="+234 80x xxx xxxx"
                     className="shadow-md p-2 pl-4 focus:outline-none rounded-full"
                   />
@@ -81,6 +84,7 @@ function Account() {
                     <input
                       type={visible ? "text" : "password"}
                       placeholder="Enter password"
+                      required
                       className="p-2 w-full pl-4 rounded-full focus:outline-none"
                     />
                     <button
@@ -124,11 +128,7 @@ function Account() {
               </p>
             </div>
             <div className="mb-12 md:mb-24 xl:w-full lg:mb-0">
-              <img
-                src="src/assets/humanoid.png"
-                className=""
-                alt=""
-              />
+              <img src="src/assets/humanoid.png" className="" alt="" />
             </div>
           </div>
         </div>
