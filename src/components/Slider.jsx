@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import Logo from "./../assets/group 5.png";
+import Logo from "./../assets/group5.png";
 import DashboardIcon from "./../assets/Frame.png";
 import SavingsIcon from "./../assets/Frame_.png";
 import RewardsIcon from "./../assets/fluent_.png";
