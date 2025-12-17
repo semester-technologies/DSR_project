@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import imgone from "./../../assets/facebook.png";
+import imgtwo from "./../../assets/twitter.png";
+import imgthree from "./../../assets/x.png";
 
 function Footer() {
   return (
@@ -29,21 +32,9 @@ function Footer() {
             </div>
             <div>
               <div className="lg:w-[50px] mt-4 lg:mt-0 flex items-center space-x-6 lg:h-[50px]">
-                <img
-                  src="src/assets/facebook.png"
-                  alt=""
-                  className="w-[25px] h-[25px]"
-                />
-                <img
-                  src="src/assets/twitter.png"
-                  alt=""
-                  className="w-[25px] h-[25px]"
-                />
-                <img
-                  src="src/assets/x.png"
-                  alt=""
-                  className="w-[25px] h-[25px]"
-                />
+                <img src={imgone} alt="" className="w-[25px] h-[25px]" />
+                <img src={imgtwo} alt="" className="w-[25px] h-[25px]" />
+                <img src={imgthree} alt="" className="w-[25px] h-[25px]" />
               </div>
             </div>
           </div>
