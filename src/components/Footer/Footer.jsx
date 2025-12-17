@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import imgone from "./../../assets/facebook.png";
 import imgtwo from "./../../assets/twitter.png";
 import imgthree from "./../../assets/x.png";
+import { useState } from "react";
 
 function Footer() {
+  const [isLoading, setIsLoading] = useState(false);
   const contactUs = async (e) => {
     e.preventDefault();
     setIsLoading(true);
