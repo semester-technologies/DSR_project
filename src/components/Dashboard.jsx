@@ -3,6 +3,13 @@ import Slider from "./Slider";
 import { useMemo } from "react";
 import { useState } from "react";
 // import { ClipLoader } from "react-spinners";
+import imgone from "./../assets/logoo.png";
+import imgtwo from "./../assets/4.png";
+import imgthree from "./../assets/Avatars.png";
+import imgfour from "./../assets/menu.png";
+import imgfive from "./../assets/clock.png";
+import imgsix from "./../assets/11.png";
+import imgseven from "./../assets/12.png";
 
 function Dashboard() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -80,16 +87,12 @@ function Dashboard() {
           <main className="relative block w-[100%]">
             <div className="flex bg-[#FFFBF6] lg:fixed lg:right-0 xl:w-[1010px] lg:w-[730px] xl:w-[1150px] 2xl:w-[1520px] lg:bg-[#fff] lg:z-5 items-center p-3 justify-between">
               <div className="">
-                <img className="lg:hidden" src="src/assets/logoo.png" alt="" />
+                <img className="lg:hidden" src={imgone} alt="" />
               </div>
               <div className="flex items-center space-x-6">
-                <img src="src/assets/4.png" alt="" />
+                <img src={imgtwo} alt="" />
                 <div className="flex hidden lg:flex space-x-4 items-center">
-                  <img
-                    src="src/assets/Avatars.png"
-                    className="w-[40px] h-[40px]"
-                    alt=""
-                  />
+                  <img src={imgthree} className="w-[40px] h-[40px]" alt="" />
                   <div className="flex flex-col">
                     <span>Rokeeb Abdul</span>
                     <span>email@gmail.com</span>
@@ -102,7 +105,7 @@ function Dashboard() {
                   {open ? (
                     <i className="fa fa-times text-white"></i>
                   ) : (
-                    <img src="src/assets/menu.png" alt="" />
+                    <img src={imgfour} alt="" />
                   )}
                 </div>
               </div>
@@ -155,11 +158,7 @@ function Dashboard() {
 
               <div className="relative rounded-lg bg-[#FF880133] hidden bg-opacity-20 p-6 mt-12">
                 <div className="flex space-x-4">
-                  <img
-                    src="src/assets/clock.png"
-                    className="w-[35px] h-[35px]"
-                    alt=""
-                  />
+                  <img src={imgfive} className="w-[35px] h-[35px]" alt="" />
                   <div className="w-full">
                     <div>
                       <h1 className="text-2xl font-bold">Upcoming Payment</h1>
@@ -186,7 +185,7 @@ function Dashboard() {
 
               <div className="flex md:grid md:grid-cols-2 md:gap-5 space-y-5 flex-col xl:flex-row pt-12 xl:space-x-8 items-center justify-between">
                 <div className="flex shadow-md p-6 w-full rounded-xl items-start space-x-6">
-                  <img src="src/assets/11.png" alt="" />
+                  <img src={imgsix} alt="" />
                   <div className="w-full space-y-2">
                     <p>Savings Goal Progress</p>
                     <p className="font-bold">#42,000 of #100,000</p>
@@ -203,7 +202,7 @@ function Dashboard() {
                 </div>
 
                 <div className="flex shadow-md p-6 w-full rounded-xl items-start space-x-6">
-                  <img src="src/assets/12.png" alt="" />
+                  <img src={imgseven} alt="" />
                   <div className="w-full space-y-2">
                     <p>Next Payout Date</p>
                     <p className="font-bold">Feb 28, 2025</p>
