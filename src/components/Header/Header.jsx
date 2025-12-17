@@ -146,12 +146,14 @@ function Header() {
                     <div className="p-3 bg-[#fff] py-2 space-y-2 ">
                       <Link
                         to="/"
+                        onClick={signIn}
                         className="p-4 text-center rounded-full block bg-[#FFFBF6] text-black text-xl"
                       >
                         Log In
                       </Link>
                       <Link
                         to="/"
+                        onClick={handleClick}
                         className="p-4 flex text-center rounded-full items-center text-white bg-[#FF8801] text-black text-xl"
                       >
                         <span className="w-full">Create free account</span>
