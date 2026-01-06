@@ -53,81 +53,85 @@ import Notifications from "./components/Notification.jsx";
 import GenerateReferralCode from "./components/GenerateReferralCode.jsx";
 import ReferralCode from "./components/ReferralCode.jsx";
 import Admin from "./Admin.jsx";
+import PrivateRoute from "./privateRoute/privateRoute.jsx";
 
 function App() {
   return (
     <div className="lg:w-full">
       <Routes>
+        {/** Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/create-account" element={<Account />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/contact-us" element={<ContactUs />} />
         {/* <Route path="/slider" element={<Slider />} /> */}
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/savings-plan" element={<SavingsPlan />} />
-        <Route path="/available-plans" element={<AvailablePlan />} />
-        <Route path="/active-plan" element={<ActivePlansDetails />} />
-        <Route path="/AccountType" element={<AccountType />} />
-        <Route path="/AccountCreation" element={<AccountCreation />} />
-        <Route path="/joinsavingsplan" element={<JoinSavingsPlan />} />
-        <Route path="/Incentives-Rewards" element={<IncentivesRewards />} />
-        <Route path="/RewardDetails" element={<RewardDetails />} />
-        <Route path="/RedemptionConfirmed" element={<RedemptionConfirm />} />
-        <Route path="/FoodHamperGift" element={<FoodHamperGift />} />
-        <Route path="/wallet" element={<Wallet />} />
-        <Route path="/TransactionDetails" element={<TransactionDetails />} />
-        <Route path="/AddBankAccount" element={<AddBankAccount />} />
-        <Route path="/wallet/settings" element={<WalletSettings />} />
-        <Route path="/top-up-wallet" element={<TransactionModal />} />
-        <Route path="/withdraw" element={<WithdrawMoney />} />
-        <Route path="/withdraw/accountInfo" element={<WithdrawModal />} />
+
+        {/** Private Routes */}
+        <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+        <Route path="/savings-plan" element={<PrivateRoute><SavingsPlan /></PrivateRoute>} />
+        <Route path="/available-plans" element={<PrivateRoute><AvailablePlan /></PrivateRoute>} />
+        <Route path="/active-plan" element={<PrivateRoute><ActivePlansDetails /></PrivateRoute>} />
+        <Route path="/AccountType" element={<PrivateRoute><AccountType /></PrivateRoute>} />
+        <Route path="/AccountCreation" element={<PrivateRoute><AccountCreation /></PrivateRoute>} />
+        <Route path="/joinsavingsplan" element={<PrivateRoute><JoinSavingsPlan /></PrivateRoute>} />
+        <Route path="/Incentives-Rewards" element={<PrivateRoute><IncentivesRewards /></PrivateRoute>} />
+        <Route path="/RewardDetails" element={<PrivateRoute><RewardDetails /></PrivateRoute>} />
+        <Route path="/RedemptionConfirmed" element={<PrivateRoute><RedemptionConfirm /></PrivateRoute>} />
+        <Route path="/FoodHamperGift" element={<PrivateRoute><FoodHamperGift /></PrivateRoute>} />
+        <Route path="/wallet" element={<PrivateRoute><Wallet /></PrivateRoute>} />
+        <Route path="/TransactionDetails" element={<PrivateRoute><TransactionDetails /></PrivateRoute>} />
+        <Route path="/AddBankAccount" element={<PrivateRoute><AddBankAccount /></PrivateRoute>} />
+        <Route path="/wallet/settings" element={<PrivateRoute><WalletSettings /></PrivateRoute>} />
+        <Route path="/top-up-wallet" element={<PrivateRoute><TransactionModal /></PrivateRoute>} />
+        <Route path="/withdraw" element={<PrivateRoute><WithdrawMoney /></PrivateRoute>} />
+        <Route path="/withdraw/accountInfo" element={<PrivateRoute><WithdrawModal /></PrivateRoute>} />
         <Route
           path="/withdraw/create-account"
-          element={<TransactionModalI />}
+          element={<PrivateRoute><TransactionModalI /></PrivateRoute>}
         />
-        <Route path="/confirmwithdrawals" element={<ConfirmWithdrawal />} />
-        <Route path="/withdrawalSuccess" element={<WithdrawalSuccess />} />
-        <Route path="/foodstuff" element={<FoodstuffMarket />} />
-        <Route path="/prouductdetails" element={<ProductDetails />} />
-        <Route path="/shoppingcart" element={<ShoppingCart />} />
-        <Route path="/deliverydetails" element={<DeliveryDetails />} />
-        <Route path="/checkoutpage" element={<OrderSuccessModal />} />
-        <Route path="/orderhistory" element={<OrderHistory />} />
-        <Route path="/trackorder" element={<TrackOrder />} />
-        <Route path="/referralmanagement" element={<ReferralManagement />} />
-        <Route path="/support" element={<SupportCenter />} />
-        <Route path="/chatassistant" element={<ChatAssistant />} />
-        <Route path="/submitticket" element={<SubmitTicket />} />
-        <Route path="/supportticket" element={<SupportTickets />} />
-        <Route path="/supportchat" element={<SupportChat />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/accountverification" element={<AccountVerification />} />
-        <Route path="/updateidmodal" element={<UploadIDModal />} />
+        <Route path="/confirmwithdrawals" element={<PrivateRoute><ConfirmWithdrawal /></PrivateRoute>} />
+        <Route path="/withdrawalSuccess" element={<PrivateRoute><WithdrawalSuccess /></PrivateRoute>} />
+        <Route path="/foodstuff" element={<PrivateRoute><FoodstuffMarket /></PrivateRoute>} />
+        <Route path="/prouductdetails" element={<PrivateRoute><ProductDetails /></PrivateRoute>} />
+        <Route path="/shoppingcart" element={<PrivateRoute><ShoppingCart /></PrivateRoute>} />
+        <Route path="/deliverydetails" element={<PrivateRoute><DeliveryDetails /></PrivateRoute>} />
+        <Route path="/checkoutpage" element={<PrivateRoute><OrderSuccessModal /></PrivateRoute>} />
+        <Route path="/orderhistory" element={<PrivateRoute><OrderHistory /></PrivateRoute>} />
+        <Route path="/trackorder" element={<PrivateRoute><TrackOrder /></PrivateRoute>} />
+        <Route path="/referralmanagement" element={<PrivateRoute><ReferralManagement /></PrivateRoute>} />
+        <Route path="/support" element={<PrivateRoute><SupportCenter /></PrivateRoute>} />
+        <Route path="/chatassistant" element={<PrivateRoute><ChatAssistant /></PrivateRoute>} />
+        <Route path="/submitticket" element={<PrivateRoute><SubmitTicket /></PrivateRoute>} />
+        <Route path="/supportticket" element={<PrivateRoute><SupportTickets /></PrivateRoute>} />
+        <Route path="/supportchat" element={<PrivateRoute><SupportChat /></PrivateRoute>} />
+        <Route path="/settings" element={<PrivateRoute><Settings /></PrivateRoute>} />
+        <Route path="/accountverification" element={<PrivateRoute><AccountVerification /></PrivateRoute>} />
+        <Route path="/updateidmodal" element={<PrivateRoute><UploadIDModal /></PrivateRoute>} />
         <Route
           path="/selfieverification"
-          element={<SelfieVerificationModal />}
+          element={<PrivateRoute><SelfieVerificationModal /></PrivateRoute>}
         />
         <Route
           path="/verification-complete"
-          element={<VerificationComplete />}
+          element={<PrivateRoute><VerificationComplete /></PrivateRoute>}
         />
-        <Route path="/change-password" element={<ChangePassword />} />
+        <Route path="/change-password" element={<PrivateRoute><ChangePassword /></PrivateRoute>} />
         <Route
           path="/notification-settings"
-          element={<NotificationSettings />}
+          element={<PrivateRoute><NotificationSettings /></PrivateRoute>}
         />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/profile/editprofile" element={<EditProfile />} />
-        <Route path="/profile/notification" element={<Notifications />} />
+        <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
+        <Route path="/profile/editprofile" element={<PrivateRoute><EditProfile /></PrivateRoute>} />
+        <Route path="/profile/notification" element={<PrivateRoute><Notifications /></PrivateRoute>} />
         <Route
           path="/generatereferralcode"
-          element={<GenerateReferralCode />}
+          element={<PrivateRoute><GenerateReferralCode /></PrivateRoute>}
         />
-        <Route path="/referralcode" element={<ReferralCode />} />
+        <Route path="/referralcode" element={<PrivateRoute><ReferralCode /></PrivateRoute>} />
 
         {/** Admin Portal */}
 
-        <Route path="/admin/*" element={<Admin />} />
+        <Route path="/admin/*" element={<PrivateRoute><Admin /></PrivateRoute>} />
       </Routes>
     </div>
   );
